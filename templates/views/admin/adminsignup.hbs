@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/studen-card.css">
+  <link rel="stylesheet" href="/css/admin.css">
+  <link rel="stylesheet" href="/css/nav.css">
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+  {{>header}}
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <!--- signup page for teacher by admin(sumit)  ---------->
+  <form method="post">
+    <div class="container register-form">
+      <div class="form">
+        <div class="note">
+          <p>Add New Admin To School</p>
+        </div>
+
+        <div class="form-content">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" class="form-control" name="name" value="{{body.name}}" placeholder="Full Name">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="name">Email Address</label>
+                <input type="email" class="form-control" name="email" value="{{body.email}}"
+                  placeholder="Personal Email">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="designation">Profile</label>
+                <select name="role" class="form-control custom-select">
+                  <option value="">Choose...</option>
+                  <option value="Teacher">Teacher</option>
+                  <option value="Principal">Principal</option>
+                  <option value="Accountant">Accountant</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="Password">Password</label>
+                <input type="text" class="form-control" name="password" value="{{body.password}}"
+                  placeholder="Password">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="ConfirmPassword">Confirm Password</label>
+                <input type="text" class="form-control" name="password2" value="{{body.password2}}"
+                  placeholder="Confirm Password">
+              </div>
+
+            </div>
+            <small id="passwordHelpBlock" class="form-text text-muted">
+              Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces,
+              special characters,
+              or emoji.
+            </small>
+          </div>
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6" style="text-align: center;"><button type="submit" class="btnSubmit">Submit</button>
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+
+          <div class="text-center">Already have an account? <a href="adminlogin">Login here</a></div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  {{>footer}}
+</body>
+
+</html>

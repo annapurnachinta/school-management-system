@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/studen-card.css">
+  <link rel="stylesheet" href="/css/admin.css">
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="http://www.w3schools.com/lib/w3data.js"></script>
+</head>
+
+<body>
+  {{>header}}
+  <br>
+  <br>
+  <div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
+    <br>
+    <h1 class="display-4 glow">Welcome</h1>
+
+    <br><br>
+    <p>Knowledge is key to success.</p>
+    <br><br><br><br><br>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="/studentsignup" role="button">Take Admission</a>
+    </p>
+    <br><br>
+  </div>
+
+  <br><br>
+
+  {{>admin_teacher_student_card}}
+
+  <br><br>
+
+    {{>footer}}
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</body>
+</html>
